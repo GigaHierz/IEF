@@ -600,18 +600,13 @@ return (
         <TabsButton>
           {!!state.sender ? (
             <button
-              className="LidoStakeFormSubmitContainer"
+              className=""
               onClick={() => submitEthers(state.strEther, state.sender)}
             >
-              <span>
-                <i class="bi bi-person"></i>
-              </span>
+              <span></span>
             </button>
           ) : (
-            <Web3Connect
-              className="LidoStakeFormSubmitContainer"
-              connectLabel="Login"
-            />
+            <Web3Connect className="" connectLabel="Connect Wallet" />
           )}
         </TabsButton>
       </Tabs>
