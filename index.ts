@@ -15,9 +15,39 @@ const mainnetLidoContract = "0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f";
 const gorliLidoContract = "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506";
 const tokenDecimals = 18;
 const contract = "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2";
-
+const initSearchText = props.searchText;
+const data = props.data;
+const debug = props.debug;
+const minLength = props.minLength;
+const placeholder = props.placeholder ?? "Search";
+const searchTermKey = props.searchTermKey; // search term key on data item
 //const network = "gorli"; // "gorli" // "rinkeby" // "mainnet"
+initState({
+  data,
+  searchText: initSearchText,
+  result: data,
+  placeholder,
+});
 
+const handleSearch = (_search) => {
+  const _result =
+    !_search || _search.length < minLength
+      ? state.data
+      : state.data.filter(
+          (item) =>
+            item[searchTermKey].toLowerCase().indexOf(_search.toLowerCase()) !==
+            -1
+        );
+
+  State.update({
+    result: _result,
+    searchText: _search,
+  });
+
+  if (props.onChange) {
+    props.onChange({ searchText, result: _result });
+  }
+};
 const network = "mainnet";
 switch (network) {
   case "gorli":
@@ -434,6 +464,12 @@ const css = `
     -webkit-box-flex: 1;
     flex-grow: 1;
 }
+
+.form-control {
+    flex: inherit;
+    width: fit-content;
+    width: 44%;
+}
 `;
 
 const Main = styled.div`
@@ -590,13 +626,26 @@ return (
           See the attestation
         </TabsButton>
 
-        <TabsButton
-          href={`${url}&tab=search`}
-          selected={state.selectedTab === "search"}
-        >
-          search
-        </TabsButton>
+        <div className="input-group">
+          <input
+            type="text"
+            className={`form-control ${state.searchText ? "border-end-0" : ""}`}
+            value={state.searchText}
+            onChange={(e) => handleSearch(e.target.value)}
+            placeholder={"🔍 " + state.placeholder}
+          />
 
+          {state.searchText && (
+            <button
+              className="btn btn-outline-secondary border border-start-0"
+              type="button"
+              onClick={() => handleSearch()}
+            >
+              <i className="bi bi-x"></i>
+            </button>
+          )}
+        </div>
+        {debug && <pre>{JSON.stringify(state.result, undefinedd, 2)}</pre>}
         <TabsButton>
           {!!state.sender ? (
             <button
