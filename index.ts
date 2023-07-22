@@ -105,7 +105,6 @@ const css = `
     margin-top: 8px;
     margin-bottom: 8px;
 }
-
 .Header{
     font-weight: 800;
     font-size: 26px;
@@ -403,6 +402,11 @@ const css = `
     pointer-events: none;
     visibility: visible;
 }
+.centered-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
 
 .LidoStakeFormSubmitContainer{
     cursor: pointer;
@@ -602,8 +606,16 @@ return (
           "linear-gradient(90deg, rgba(205, 255, 216, 1.000000) 0%, rgba(148, 185, 255, 1.000000) 100%)",
       }}
     >
+      <div class="img-fluid  text-center">
+        <div class="col-lg-1">
+          <img
+            class="float-center"
+            src="https://ipfs.near.social/ipfs/bafkreiajtzhlslb2ctqgzu6fxydqkglwswmtgp76hj5trvi4jr2feew5fe"
+            width="100"
+          />
+        </div>
+      </div>
       <div className="d-flex justify-content-start"></div>
-
       <Tabs>
         <TabsButton
           href={`${url}&tab=home`}
@@ -616,14 +628,14 @@ return (
           href={`${url}&tab=Makeanattestation`}
           selected={state.selectedTab === "Makeanattestation"}
         >
-          Make an attestation
+          Create an attestation
         </TabsButton>
 
         <TabsButton
           href={`${url}&tab=Seetheattestation`}
           selected={state.selectedTab === "Seetheattestation"}
         >
-          See the attestation
+          Attestation
         </TabsButton>
 
         <div className="input-group">
@@ -659,8 +671,17 @@ return (
           )}
         </TabsButton>
       </Tabs>
-
-      <p>.</p>
+      <div className="centered-container">
+        <h1>Proving has never been this easy</h1>
+        <p>
+          Blockchain can allow to create attestations to certify and prove your
+          achievements
+        </p>
+      </div>{" "}
+      <button class="btn btn-primary mt-2 bg-white" onClick={onBtnClick}>
+        <a href="#">Choose your attestation</a>
+      </button>
+      <p>................</p>
     </div>
 
     {/* fin */}
