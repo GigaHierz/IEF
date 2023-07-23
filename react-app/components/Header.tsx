@@ -24,7 +24,7 @@ export default function Header() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Image
-                    className="block h-8 w-auto sm:block lg:block"
+                    className="block rounded-full h-10 w-auto sm:block lg:block"
                     src="/logo.svg"
                     width="30"
                     height="30"

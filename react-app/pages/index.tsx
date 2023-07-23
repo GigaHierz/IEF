@@ -25,7 +25,7 @@ export default function Home() {
       <button className="inline-flex w-60 justify-center rounded-full border px-5 my-5 py-2 text-md font-medium border-wood bg-gypsum text-black hover:bg-snow">
         <a
           href="attestationOnchain"
-          className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900"
+          className="inline-flex no-underline items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-900"
         >
           Create Attestation
         </a>
