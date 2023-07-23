@@ -6,7 +6,7 @@
 
 <div align="center">
     <h4>
-        <a href="/CONTRIBUTING.md">
+        <a href="/SchemasperArea">
             👥 Framework
         </a>
         <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
