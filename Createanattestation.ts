@@ -470,6 +470,20 @@ const css = `
     width: fit-content;
     width: 44%;
 }
+.alineacion{
+    margin-left: 20%;
+}
+.table{
+    
+    border: 0px solid white !important;
+    border-collapse: collapse;
+}
+.bi bi-info-circle,.bi-info-circle::before{
+    margin-left: -22px !important;
+}
+.top{
+    padding-top: 18px;
+}
 `;
 
 const Main = styled.div`
@@ -602,7 +616,7 @@ return (
           "linear-gradient(90deg, rgba(205, 255, 216, 1.000000) 0%, rgba(148, 185, 255, 1.000000) 100%)",
       }}
     >
-      <div className="d-flex justify-content-start">
+      <div className="d-flex justify-content-center ">
         <Tabs>
           <TabsButton
             href={`${url}&tab=home`}
@@ -625,27 +639,24 @@ return (
             Attestations
           </TabsButton>
 
-          <div className="input-group">
-            <input
-              type="text"
-              className={`form-control ${
-                state.searchText ? "border-end-0" : ""
-              }`}
-              value={state.searchText}
-              onChange={(e) => handleSearch(e.target.value)}
-              placeholder={"🔍 " + state.placeholder}
-            />
+          <input
+            type="text"
+            className={`form-control ${state.searchText ? "border-end-0" : ""}`}
+            value={state.searchText}
+            onChange={(e) => handleSearch(e.target.value)}
+            placeholder={"🔍 " + state.placeholder}
+          />
 
-            {state.searchText && (
-              <button
-                className="btn btn-outline-secondary border border-start-0"
-                type="button"
-                onClick={() => handleSearch()}
-              >
-                <i className="bi bi-x"></i>
-              </button>
-            )}
-          </div>
+          {state.searchText && (
+            <button
+              className="btn btn-outline-secondary border border-start-0"
+              type="button"
+              onClick={() => handleSearch()}
+            >
+              <i className="bi bi-x"></i>
+            </button>
+          )}
+
           {debug && <pre>{JSON.stringify(state.result, undefinedd, 2)}</pre>}
           <TabsButton>
             {!!state.sender ? (
@@ -661,32 +672,40 @@ return (
           </TabsButton>
         </Tabs>
       </div>
-      <p>.</p>
-      <div>
-        <table className="p-3 mb-2 bg-white text-dark">
+
+      <div className="container align-items-center col-6 text-capitalize  ">
+        <table className="p-3 mb-2 bg-white text-dark table">
           <tbody>
             <tr>
-              <td>New attestation</td>
+              <td>
+                <h5 className="top">New attestation</h5>
+              </td>
               <button
                 type="button"
-                className="btn btn-light rounded-pill bg-info"
+                className="btn btn-light rounded-pill bg-info m-3"
               >
                 Private
               </button>
+              <i class="bi bi-info-circle"></i>
               <button
                 type="button"
-                className="btn btn-light rounded-pill bg-info"
+                className="btn btn-light rounded-pill bg-info m-3"
               >
                 Off chain
               </button>
+              <i class="bi bi-info-circle"></i>
             </tr>
             <tr>
-              <td>Type</td>
+              <td>
+                <h5>Legislator Position</h5>
+              </td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <td>Link 1:</td>
+              <td>
+                <h5>Date</h5>
+              </td>
               <td colspan="2">
                 <textarea
                   className="form-control"
@@ -697,7 +716,9 @@ return (
               <td></td>
             </tr>
             <tr>
-              <td>Link 2:</td>
+              <td>
+                <h5>Name</h5>
+              </td>
               <td colspan="2">
                 <textarea
                   className="form-control"
@@ -708,7 +729,9 @@ return (
               <td></td>
             </tr>
             <tr>
-              <td>Link 3:</td>
+              <td>
+                <h5>Regulation</h5>
+              </td>
               <td colspan="2">
                 <textarea
                   className="form-control"
@@ -719,7 +742,9 @@ return (
               <td></td>
             </tr>
             <tr>
-              <td>Title:</td>
+              <td>
+                <h5>Posture</h5>
+              </td>
               <td colspan="2">
                 <textarea
                   className="form-control"
