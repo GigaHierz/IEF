@@ -77,3 +77,59 @@ Rewriten article            </td>
     
 
 </table>
+
+
+##  Education
+
+<table>
+    <th>Schema</th>
+    <th>Name</th>
+    <th>Description</th>
+    <tbody>
+        <tr>
+            <td>
+            110
+            </td>
+            <td>
+               Organization Scholarship or Fellowship recipient 
+            </td>
+            <td>    
+             Signal the number of beneficiaries from scholarships or fellowships from your organizations programs withouth endangering their personal data. Only if desired and approved would you be able to share their name or other data. 
+            </td>
+        </tr>
+        <tr>
+            <td>
+               8
+                </a>
+            </td>
+            <td>
+                Has participated in hackathon
+            </td>
+            <td>    
+                This attestation would be referring a previous attestation if the recepient is also a fellow or scholar during the time of the hackathon. 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                27
+            </td>
+            <td>
+Hackathon submission             </td>
+            <td>    
+              Attestation to the submission of projects by hackathon participants. This attestation can reference a "has participated in hackathon" attestation which will enable the traceability of the original action.   
+            </td>
+              <tr>
+            <td>
+               39
+                </a>
+            </td>
+            <td>
+Employement verification
+            </td>
+            <td>    
+                Attest to the employement of an individual. If this person was previously a fellow or scholar, and that action contributed to their employement this attestation can reference to them. 
+            </td>
+        </tr>
+
+</table>
+
