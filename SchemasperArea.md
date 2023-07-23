@@ -1,4 +1,4 @@
-## 📦 Legal
+##  Legal
 
 <table>
     <th>Schema</th>
@@ -51,6 +51,7 @@ Meeting attendance             </td>
         </tr>
  <tr>
             <td>
+                <a>
                16
                 </a>
             </td>
@@ -59,8 +60,10 @@ Initial draft            </td>
             <td>    
                 Hashing of the initial draft of an article received for rewriting. 
             </td>
+ </tr>
+     <tr>
     <td>
-        <tr>
+            <a>
                16
                 </a>
             </td>
@@ -72,6 +75,5 @@ Rewriten article            </td>
         </tr>
 
     
-    
-           <tbody>
+
 </table>
