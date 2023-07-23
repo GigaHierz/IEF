@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="bg-prosperity border-b border-black">
+    <Disclosure as="nav">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -26,9 +26,9 @@ export default function Header() {
                   <Image
                     className="block h-8 w-auto sm:block lg:block"
                     src="/logo.svg"
-                    width="24"
-                    height="24"
-                    alt="Celo Logo"
+                    width="30"
+                    height="30"
+                    alt="IEF Logo"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
@@ -41,10 +41,18 @@ export default function Header() {
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   <a
-                    href="attestation"
+                    href="attestationOnchain"
                     className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900"
                   >
-                    Attestation
+                    Create Attestation
+                  </a>
+                </div>
+                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+                  <a
+                    href="list"
+                    className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900"
+                  >
+                    Attestations
                   </a>
                 </div>
               </div>

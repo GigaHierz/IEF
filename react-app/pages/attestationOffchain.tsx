@@ -113,7 +113,7 @@ export default function Home() {
       </form>
       <div>
         <button
-          className="inline-flex w-full justify-center rounded-full border px-5 my-5 py-2 text-md font-medium border-wood bg-prosperity text-black hover:bg-snow"
+          className="inline-flex w-60 justify-center rounded-full border px-5 my-5 py-2 text-md font-medium border-wood bg-gypsum text-black hover:bg-snow"
           onClick={() => createAttestation()}
         >
           {"Create Attestation"}

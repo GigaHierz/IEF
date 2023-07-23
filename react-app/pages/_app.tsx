@@ -6,11 +6,7 @@ import {
   getDefaultWallets,
   RainbowKitProvider,
 } from "@rainbow-me/rainbowkit";
-import {
-  metaMaskWallet,
-  omniWallet,
-  walletConnectWallet,
-} from "@rainbow-me/rainbowkit/wallets";
+
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import {
