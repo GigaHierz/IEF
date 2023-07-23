@@ -135,33 +135,6 @@ const css = `
     color: #273852;
 }
 
-.LidoStakeFormInputContainerSpan2{
-    font-weight: 400;
-    font-size: 14px;
-    display: flex;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    position: relative;
-    padding: 17px 0px;
-}
-
-.LidoStakeFormInputContainerSpan2Input{
-    width: 100%;
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 1.43em;
-    padding: 0px;
-    border-radius: 0px;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    outline: none;
-    position: relative;
-    top: 0px;
-    color: #273852;
-}
-
 .form-control {
     flex: inherit;
     width: fit-content;
