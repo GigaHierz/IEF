@@ -124,6 +124,19 @@ const css = `
 };
 
 
+.selectCSS{
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    border: none;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    position: relative;
+    padding: 17px 0px;
+    color: #273852;
+}
+
+
 .form-control {
     flex: inherit;
     width: fit-content;
@@ -142,6 +155,13 @@ const css = `
 }
 .top{
     padding-top: 18px;
+}
+.negritas{
+    font-weight: bolder;
+}
+.chicas{
+    font-size: 10px;
+
 }
 `;
 
@@ -297,14 +317,14 @@ return (
             href={`${url}&tab=Makeanattestation`}
             selected={state.selectedTab === "Makeanattestation"}
           >
-            Create an attestation
+            Make an attestation
           </TabsButton>
 
           <TabsButton
             href={`${url}&tab=Seetheattestation`}
             selected={state.selectedTab === "Seetheattestation"}
           >
-            Attestations
+            See the attestations
           </TabsButton>
 
           <input
@@ -340,99 +360,60 @@ return (
           </TabsButton>
         </Tabs>
       </div>
-
-      <div className="container align-items-center col-6 text-capitalize  ">
-        <table className="p-3 mb-2 bg-white text-dark table">
-          <tbody>
-            <tr>
-              <td>
-                <h5 className="top">New attestation</h5>
-              </td>
-              <button
-                type="button"
-                className="btn btn-light rounded-pill bg-info m-3"
-              >
-                Private
-              </button>
-              <i class="bi bi-info-circle"></i>
-              <button
-                type="button"
-                className="btn btn-light rounded-pill bg-info m-3"
-              >
-                Off chain
-              </button>
-              <i class="bi bi-info-circle"></i>
-            </tr>
-            <tr>
-              <td>
-                <h5>Legislator Position</h5>
-              </td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <h5>Date</h5>
-              </td>
-              <td colspan="2">
-                <textarea
-                  className="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="1"
-                ></textarea>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <h5>Name</h5>
-              </td>
-              <td colspan="2">
-                <textarea
-                  className="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="1"
-                ></textarea>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <h5>Regulation</h5>
-              </td>
-              <td colspan="2">
-                <textarea
-                  className="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="1"
-                ></textarea>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <h5>Posture</h5>
-              </td>
-              <td colspan="2">
-                <textarea
-                  className="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="1"
-                ></textarea>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>
-                <button type="button" className="btn btn-light bg-info m-3">
-                  Attest!
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div className="container col-9 mt-4 bg-white h6">
+        <div className="row">
+          <div className="col m-2 negritas">Name: attestation</div>
+          <div className="col"></div>
+          <div className="col m-2 negritas">Created the:</div>
+        </div>
+        <div className="row ">
+          <div className="col m-2 negritas">Type:</div>
+          <div className="col"></div>
+          <div className="col"></div>
+        </div>
+        <div className="row">
+          <div className="col m-2 negritas">From:</div>
+          <div className="col"></div>
+          <div className="col"></div>
+        </div>
+        <div className="row">
+          <div className="col m-2 negritas chicas">Transaction id:</div>
+          <div className="col"></div>
+          <div className="col"></div>
+        </div>
+        <div className="row">
+          <div className="col m-2 negritas chicas">UID:</div>
+          <div className="col"></div>
+          <div className="col"></div>
+        </div>
+        <div className="row">
+          <div className="col m-2 negritas">Date</div>
+          <div className="col-8 m-2">
+            <input type="text" className="form-control" />
+          </div>
+          <div className="col"></div>
+        </div>
+        <div className="row">
+          <div className="col m-2 negritas">Name</div>
+          <div className="col-8 m-2">
+            <input type="text" className="form-control" />
+          </div>
+          <div className="col"></div>
+        </div>
+        <div className="row">
+          <div className="col m-1 negritas">Regulation</div>
+          <div className="col-8 m-1">
+            <input type="text" className="form-control" />
+          </div>
+          <div className="col"></div>
+        </div>
+        <div className="row">
+          <div className="col m-2 negritas">Posture</div>
+          <div className="col-8 m-2">
+            <input type="text" className="form-control" />
+          </div>
+          <div className="col"></div>
+        </div>
       </div>
     </div>
 

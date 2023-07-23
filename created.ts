@@ -105,7 +105,6 @@ const css = `
     margin-top: 8px;
     margin-bottom: 8px;
 }
-
 .Header{
     font-weight: 800;
     font-size: 26px;
@@ -124,24 +123,22 @@ const css = `
 };
 
 
+.selectCSS{
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    border: none;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    position: relative;
+    padding: 17px 0px;
+    color: #273852;
+}
+
 .form-control {
     flex: inherit;
     width: fit-content;
     width: 44%;
-}
-.alineacion{
-    margin-left: 20%;
-}
-.table{
-    
-    border: 0px solid white !important;
-    border-collapse: collapse;
-}
-.bi bi-info-circle,.bi-info-circle::before{
-    margin-left: -22px !important;
-}
-.top{
-    padding-top: 18px;
 }
 `;
 
@@ -284,29 +281,30 @@ return (
           />
         </div>
       </div>
-      <div className="d-flex justify-content-center ">
-        <Tabs>
-          <TabsButton
-            href={`${url}&tab=home`}
-            selected={state.selectedTab === "home"}
-          >
-            Home
-          </TabsButton>
+      <div className="d-flex justify-content-start"></div>
+      <Tabs>
+        <TabsButton
+          href={`${url}&tab=home`}
+          selected={state.selectedTab === "home"}
+        >
+          Home
+        </TabsButton>
 
-          <TabsButton
-            href={`${url}&tab=Makeanattestation`}
-            selected={state.selectedTab === "Makeanattestation"}
-          >
-            Create an attestation
-          </TabsButton>
+        <TabsButton
+          href={`${url}&tab=Makeanattestation`}
+          selected={state.selectedTab === "Makeanattestation"}
+        >
+          Create an attestation
+        </TabsButton>
 
-          <TabsButton
-            href={`${url}&tab=Seetheattestation`}
-            selected={state.selectedTab === "Seetheattestation"}
-          >
-            Attestations
-          </TabsButton>
+        <TabsButton
+          href={`${url}&tab=Seetheattestation`}
+          selected={state.selectedTab === "Seetheattestation"}
+        >
+          Attestation
+        </TabsButton>
 
+        <div className="input-group">
           <input
             type="text"
             className={`form-control ${state.searchText ? "border-end-0" : ""}`}
@@ -324,116 +322,31 @@ return (
               <i className="bi bi-x"></i>
             </button>
           )}
+        </div>
+        {debug && <pre>{JSON.stringify(state.result, undefinedd, 2)}</pre>}
+        <TabsButton>
+          {!!state.sender ? (
+            <button
+              className=""
+              onClick={() => submitEthers(state.strEther, state.sender)}
+            >
+              <span></span>
+            </button>
+          ) : (
+            <Web3Connect className="" connectLabel="Connect Wallet" />
+          )}
+        </TabsButton>
+      </Tabs>
+      <div className="centered-container">
+        <img
+          class="float-center"
+          src="https://ipfs.near.social/ipfs/bafkreigdpsfenvqnvoylsawhnhxqbpwp2cbz6c54dkwikzzzsolkas5yde"
+          width="400"
+        />
 
-          {debug && <pre>{JSON.stringify(state.result, undefinedd, 2)}</pre>}
-          <TabsButton>
-            {!!state.sender ? (
-              <button
-                className=""
-                onClick={() => submitEthers(state.strEther, state.sender)}
-              >
-                <span></span>
-              </button>
-            ) : (
-              <Web3Connect className="" connectLabel="Connect Wallet" />
-            )}
-          </TabsButton>
-        </Tabs>
+        <p>Congratulations! You created your attestation!</p>
       </div>
-
-      <div className="container align-items-center col-6 text-capitalize  ">
-        <table className="p-3 mb-2 bg-white text-dark table">
-          <tbody>
-            <tr>
-              <td>
-                <h5 className="top">New attestation</h5>
-              </td>
-              <button
-                type="button"
-                className="btn btn-light rounded-pill bg-info m-3"
-              >
-                Private
-              </button>
-              <i class="bi bi-info-circle"></i>
-              <button
-                type="button"
-                className="btn btn-light rounded-pill bg-info m-3"
-              >
-                Off chain
-              </button>
-              <i class="bi bi-info-circle"></i>
-            </tr>
-            <tr>
-              <td>
-                <h5>Legislator Position</h5>
-              </td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <h5>Date</h5>
-              </td>
-              <td colspan="2">
-                <textarea
-                  className="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="1"
-                ></textarea>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <h5>Name</h5>
-              </td>
-              <td colspan="2">
-                <textarea
-                  className="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="1"
-                ></textarea>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <h5>Regulation</h5>
-              </td>
-              <td colspan="2">
-                <textarea
-                  className="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="1"
-                ></textarea>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <h5>Posture</h5>
-              </td>
-              <td colspan="2">
-                <textarea
-                  className="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="1"
-                ></textarea>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>
-                <button type="button" className="btn btn-light bg-info m-3">
-                  Attest!
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <p>................</p>
     </div>
 
     {/* fin */}
