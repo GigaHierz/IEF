@@ -1,51 +1,77 @@
+## 📦 Legal
+
 <table>
-    <th>Stage</th>
+    <th>Schema</th>
     <th>Name</th>
     <th>Description</th>
     <tbody>
         <tr>
             <td>
-                1
+                46
             </td>
             <td>
-               Attest
+               Communication issued to lobby members
             </td>
             <td>    
-              Organizations can select from a menu of areas of action that best fit their work. Through an organized and limited offering of options, organizations that are resources constrained and some that are less technically saavy will be able to easily generate their own attestations.
+             Verify the information on the communication issued to lobby members to 
             </td>
         </tr>
         <tr>
             <td>
-               2
+               110
                 </a>
             </td>
             <td>
-                Measure
+                Attest to knowledge sharing
             </td>
             <td>    
-                Once organizations are familiar with the creation of attestations, and have been using them at length for different milestones, they will be able to complete complex measurements and verifiable qualitative descriptions of the impact their projects have generated. 
+                Lobby groups can list all the members they've shared intel with for their benefit in a privacy preserving way. Through Sismo, outsiders can verify the number of beneficiaries of these data, without being able to see their specific names and if required the lobby group can generate individual proofs per recepient for others to validate their inclusion in this set. 
             </td>
         </tr>
         <tr>
             <td>
-                3
+                110
             </td>
             <td>
-Verify             </td>
+Meeting attendance             </td>
             <td>    
-              It's time to apply for RetroPGF, the next Gitcoin Round or share your projects development on Giveth? We got you, obtain statistics based on your issued and received attestations and showcase your uptodate impact in the ecosystem. 
+              Registration of lobbying meetings by lobby groups which can include the name of the person met, topic discussed, etc. The information is private and not visible to the general public and may only be verified through the proof issued, per field, by the attester.  
             </td>
               <tr>
             <td>
-               4
+               46
                 </a>
             </td>
             <td>
-                Compare
+                Position Paper
             </td>
             <td>    
-                Receive the funding you deserve based on your impact. By having a standardized method to of impact measurement not only will explaining your impact to third parties be easier but also demonstrating your advantages over other players in the ecosystem. Understand and learn how you can improve or share your best practices with others. 
+                Hashing of the position paper issued by the lobbying group in face of an upcoming regulation. 
             </td>
         </tr>
+ <tr>
+            <td>
+               16
+                </a>
+            </td>
+            <td>
+Initial draft            </td>
+            <td>    
+                Hashing of the initial draft of an article received for rewriting. 
+            </td>
+    <td>
+        <tr>
+               16
+                </a>
+            </td>
+            <td>
+Rewriten article            </td>
+            <td>    
+                Hashing of the second draft issued by the government body once the position paper has been shared and lobbying is underway. Through this second attestation lobby groups can describe how much of the information they shared with regulators through their position papers and communication strategy has been used to improve the initial draft. 
+            </td>
+        </tr>
+
+    
+    
            <tbody>
 </table>
