@@ -62,8 +62,10 @@ As it stands, without more comprehensive guidelines and support, the expanding s
 
 ## 💡 Solution
 
-IEF proposes a 3-step process to address the challenge in measuring the impact of public goods projects applying for RetroPGF. 
-This process is only possible with the creation, and upkeep of an Impact Evaluation Framework that provides opt-in guidelines on a) how KPI's to measure impact are created and measured (at a technical level), b) offers a non-exhaustive set of KPI's that are commonly used by projects to evaluate their impact, and the logic behind those KPI's (these can be used as inspiration on how to create new KPI's), c) the importance of empowering operators to self-assess, d) guidelines to generate both quantitative and qualitative evaluations, e) the dangers of over-meassuring. 
+**Simple, but currently missing foundation**
+
+IEF proposes a 3-legged approach to address the challenge in measuring the impact of public goods projects applying for Public Goods funding. 
+This process is only possible with the creation, and upkeep of an Impact Evaluation Framework that provides opt-in guidelines on a) how KPI's to measure impact are created and measured (at a technical level), b) offers a non-exhaustive set of action based attestations that are commonly used by projects to generate data on their work, and the logic behind those data points (these can be used as inspiration on how to create new data points and therefore KPI's), c) the referencig and interweaving of attestations to enable not only output but outcome identification, d) the importance of empowering operators to self-assess, e) guidelines to generate both quantitative and qualitative evaluations, f) the dangers of over-meassuring. 
 
 Leveraging this Impact Evaluation Framework, we suggest the following process to evaluate impact: 
 
@@ -78,10 +80,10 @@ Leveraging this Impact Evaluation Framework, we suggest the following process to
                 1
             </td>
             <td>
-               Self-reported impact evaluation
+               Attest
             </td>
             <td>    
-               Nominees will create a self-reported impact evaluation based on the impact their projects have had on the Ethereum Ecosystem and their ripple or direct impact on the Optimism Ecosystem. 
+              Organizations can select from a menu of areas of action that best fit their work. Through an organized and limited offering of options, organizations that are resources constrained and some that are less technically saavy will be able to easily generate their own attestations.
             </td>
         </tr>
         <tr>
@@ -90,10 +92,10 @@ Leveraging this Impact Evaluation Framework, we suggest the following process to
                 </a>
             </td>
             <td>
-                Random, anonymous, peer evaluation
+                Measure
             </td>
             <td>    
-                Each project that has submitted a self-reported evaluation and has registered on the IEF platform will, at random, be assigned to evaluate 5 peer projects self-reported evaluations. Peer evaluations will be anonymous, meaning the evaluated projects will be unable to tell who evaluated them, which helps reduce collusion and retaliation. They will also be preserved as binary attestations within the UniRep protocol: meaning an evaluating project may only approve or dissaprove the self report issued by a peer. 
+                Once organizations are familiar with the creation of attestations, and have been using them at length for different milestones, they will be able to complete complex measurements and verifiable qualitative descriptions of the impact their projects have generated. 
             </td>
         </tr>
         <tr>
@@ -101,10 +103,22 @@ Leveraging this Impact Evaluation Framework, we suggest the following process to
                 3
             </td>
             <td>
-Badgeholders evaluation of a random set of self-reported evaluations along the peer attestations to those reports.              </td>
+Verify             </td>
             <td>    
-              Optimism Badgeholders will receive a capped random set of projects to evaluate. By capping the number of projects to be evaluated, badgeholders do not need to spread themselves thin. Additionally, through the use of the Impact Evaluation Framework and the results of the peer evaluation, badgeholders will have an increased amount of information to base their decisions on. 
+              It's time to apply for RetroPGF, the next Gitcoin Round or share your projects development on Giveth? We got you, obtain statistics based on your issued and received attestations and showcase your uptodate impact in the ecosystem. 
             </td>
+              <tr>
+            <td>
+               4
+                </a>
+            </td>
+            <td>
+                Compare
+            </td>
+            <td>    
+                Receive the funding you deserve based on your impact. By having a standardized method to of impact measurement not only will explaining your impact to third parties be easier but also demonstrating your advantages over other players in the ecosystem. Understand and learn how you can improve or share your best practices with others. 
+            </td>
+        </tr>
            <tbody>
 </table>
 
@@ -114,11 +128,12 @@ Badgeholders evaluation of a random set of self-reported evaluations along the p
 
 ## 📜 Next Steps
 
-1. Enable the use of POAPs as a data point to increase a projects reputation on the UniRep protocol. Having certain POAPs should contribute to giving more credibility to a projects evaluation of their peers. 
-2. Create user lists within the UniRep code so that projects are 1) able to evaluate peers in multiple categories AND have different reputation scores for each category, based on their qualifications in each of these categories. 
-3. Enable the carrying over of the reputation score from one epoch to the next. 
-4. Enable an increase in reputation per category by having participated in multiple peer evaluation rounds. 
-
+1. Explore batch migration of POAP's information to attestations.
+2. Increase the areas of evaluation available on the site. 
+3. Increase the number of schemas per subject area. 
+4. Generate ad-hoc private data standardized schemas
+5. Feed data to comparison infrastructure such as Pairwise.
+   
 ### Important
 
 
