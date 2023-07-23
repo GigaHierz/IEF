@@ -1,6 +1,6 @@
 <p align="center">
 
-# IEF: Impact Evaluation Framework: Attest, Measure, Evaluate, Compare
+# IEF -  Attest, Measure, Evaluate, Compare
 
 </p>
 
@@ -24,11 +24,10 @@
     </h4>
 </div>
 
-| IEF is a platform designed to enable RetroPGF Round 3 nominees to evaluate a random set of peer nominees projects impact anonymously. Through this evaluation, they can attest to the correct self-evaluation of others and help improve the current information gap badgeholders that are not familiar with a specific category might have.
+| IEF is a framework to standardize the use of attestations to generate data points to measure the impact of agents in the web3 ecosystem.
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-Leveraging UniRep, IEF ensures that only projects who have submitted a self-reported impact evaluation, and are therefore familiar with the Impact Evaluation Framework, can evaluate peers **in an anonymous manner** using zero knowledge. 
-
+Leveraging EAS, IEF proposes an opt-in standardized series of attestations that organizations can use to measure comparable data points to track their impact in the web3 ecosystem. By generating data on the actions being carried out, projects are able to trace their work on-chain and have funders **verify their impact**. 
 
 
 ## 📦 Problem(s)
@@ -66,7 +65,7 @@ As it stands, without more comprehensive guidelines and support, the expanding s
 IEF proposes a 3-step process to address the challenge in measuring the impact of public goods projects applying for RetroPGF. 
 This process is only possible with the creation, and upkeep of an Impact Evaluation Framework that provides opt-in guidelines on a) how KPI's to measure impact are created and measured (at a technical level), b) offers a non-exhaustive set of KPI's that are commonly used by projects to evaluate their impact, and the logic behind those KPI's (these can be used as inspiration on how to create new KPI's), c) the importance of empowering operators to self-assess, d) guidelines to generate both quantitative and qualitative evaluations, e) the dangers of over-meassuring. 
 
-Leveraging this Impact Evaluation Framework, I suggest the following process to evaluate impact: 
+Leveraging this Impact Evaluation Framework, we suggest the following process to evaluate impact: 
 
 
 <table>
